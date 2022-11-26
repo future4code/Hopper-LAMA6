@@ -1,0 +1,41 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Madson Ribas",
+    "email": "madson.ribas@gmail.com",
+    "password": "123456",
+    "role": "ADMIN"
+}
+
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "madson.ribas@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3003/band/register
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA1MDY1NjI3LTdiNjItNGZiZi1iNDhmLTcxMjRlYmQ1NzdkNSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2OTQxMDkxMCwiZXhwIjoxNjY5NDEyMTEwfQ.SO2b7YlCAg0NNCD5biYEpRNd40bsQN5kBHKhGZm3BMI
+
+{
+    "name": "Anodema",
+    "musicGenre": "Punk Rock",
+    "responsible": "Madson Ribas"
+}
+
+###
+
+GET http://localhost:3003/band/details
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA1MDY1NjI3LTdiNjItNGZiZi1iNDhmLTcxMjRlYmQ1NzdkNSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2OTQxMDkxMCwiZXhwIjoxNjY5NDEyMTEwfQ.SO2b7YlCAg0NNCD5biYEpRNd40bsQN5kBHKhGZm3BMI
+
+{
+    "name": "Anodema"
+}
