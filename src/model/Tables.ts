@@ -1,0 +1,3 @@
+export const TABELA_USUARIOS = "LAMA_USUARIOS"
+export const TABELA_BANDAS = "LAMA_BANDAS"
+export const TABELA_SHOWS = "LAMA_SHOWS"
